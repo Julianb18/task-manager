@@ -5,7 +5,7 @@ import { Task } from "./Task";
 export const TaskList = () => {
   const { tasks } = useContext(TaskListContext);
   return (
-    <div>
+    <>
       {tasks.length ? (
         <ul className="list">
           {tasks.map((task) => {
@@ -15,6 +15,6 @@ export const TaskList = () => {
       ) : (
         <div className="no-tasks">No Tasks</div>
       )}
-    </div>
+    </>
   );
 };
